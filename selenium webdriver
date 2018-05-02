@@ -1,0 +1,16 @@
+#coding:utf8
+from selenium import webdriver
+import csv
+a = 'http://v.qq.com'
+b = 'http://music.163.com/#/discover/playlist'
+c = 'http://youku.com/'
+driver = webdriver.PhantomJS()
+
+
+driver.get(c)
+
+
+
+data = driver.find_element_by_tag_name("div")
+
+print(data.text)
